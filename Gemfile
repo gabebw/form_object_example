@@ -4,6 +4,7 @@ ruby "2.1.5"
 
 gem "bourbon", "~> 3.2.1"
 gem "coffee-rails"
+gem "flutie"
 gem "jquery-rails"
 gem "neat", "~> 1.5.1"
 gem "normalize-rails", "~> 3.0.0"
