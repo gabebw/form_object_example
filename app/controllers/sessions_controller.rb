@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def new
+    render :new
   end
 
   def create
@@ -13,5 +14,10 @@ class SessionsController < ApplicationController
 
       render :new
     end
+  end
+
+  def destroy
+    cookies[:id] = nil
+    redirect_to root_path
   end
 end
