@@ -5,3 +5,12 @@
 @import 'base/grid-settings';
 @import 'neat';
 @import 'base/base';
+
+body {
+  @include outer-container;
+  margin-top: 3em;
+}
+
+#main {
+  @include span-columns(6);
+}

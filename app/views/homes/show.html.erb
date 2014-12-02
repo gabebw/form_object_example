@@ -1,0 +1,6 @@
+<% if current_user %>
+  <h3>You are signed in</h3>
+  <h4>Email: <%= current_user.email %></h4>
+<% else %>
+  <h3>You are signed out. Try <%= link_to "signing in", new_session_path %> or <%= link_to "signing up", new_user_path %> first.</h3>
+<% end %>

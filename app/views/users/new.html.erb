@@ -1,0 +1,11 @@
+<h1>Sign up</h1>
+
+<%= simple_form_for @user do |form| %>
+  <div>
+    <%= form.input :email %>
+  </div>
+
+  <div>
+    <%= form.submit "Sign up" %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Sign in</h1>
+
+<%= simple_form_for :session, url: sessions_path do |form| %>
+  <div>
+    <%= form.input :email %>
+  </div>
+
+  <div>
+    <%= form.submit "Sign in" %>
+  </div>
+<% end %>
