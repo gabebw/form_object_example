@@ -5,6 +5,10 @@
     <%= form.input :email %>
   </div>
 
+  <%= form.simple_fields_for :company do |company_fields| %>
+    <%= company_fields.input :name, label: "Company name" %>
+  <% end %>
+
   <div>
     <%= form.submit "Sign up" %>
   </div>
