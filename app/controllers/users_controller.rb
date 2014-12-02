@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
   def new
-    @user = User.new
+    @signup = Signup.new
   end
 
   def create
-    @user = User.new(user_params)
+    @signup = Signup.new(signup_params)
 
-    if @user.save
-      set_current_user(@user)
+    if @signup.save
+      set_current_user(@signup.user)
       redirect_to root_path
     else
       render :new
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
   private
 
-  def user_params
-    params.require(:user).permit(:email)
+  def signup_params
+    params.require(:signup).permit(:user_email, :company_name)
   end
 end
