@@ -1,35 +1,7 @@
 Form object example
 ===================
 
-Getting Started
----------------
+This repository contains two solutions to the problem of saving a User and a Company in the same controller action.
 
-After you have cloned this repo, run this setup script to set up your machine
-with the necessary dependencies to run and test this app:
-
-    % ./bin/setup
-
-It assumes you have a machine equipped with Ruby, Postgres, etc. If not, set up
-your machine with [this script].
-
-[this script]: https://github.com/thoughtbot/laptop
-
-After setting up, you can run the application using [foreman]:
-
-    % foreman start
-
-If you don't have `foreman`, see [Foreman's install instructions][foreman]. It
-is [purposefully excluded from the project's `Gemfile`][exclude].
-
-[foreman]: https://github.com/ddollar/foreman
-[exclude]: https://github.com/ddollar/foreman/pull/437#issuecomment-41110407
-
-Guidelines
-----------
-
-Use the following guides for getting things done, programming well, and
-programming in style.
-
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
+1. There is [a solution that uses `accepts_nested_attributes_for`](https://github.com/gabebw/form_object_example/compare/gbw-use-accepts-nested-attributes).
+1. There is another [solution that uses form objects](https://github.com/gabebw/form_object_example/compare/gbw-use-form-object).
